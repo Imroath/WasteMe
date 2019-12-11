@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="WasteMe.Views.ItemDetailPage"
+             Title="{Binding Title}">
+
+    <StackLayout Spacing="20" Padding="15">
+        <Label Text="Name:" FontSize="Large" />
+        <Label Text="{Binding Item.Name}" d:Text="Item name" FontSize="Medium" FontAttributes="Bold"/>
+        <Label Text="Barcode:" FontSize="Medium" />
+        <Label Text="{Binding Item.Barcode}" d:Text="Barcode" FontSize="Medium" FontAttributes="Bold"/>
+        <Image Source="{Binding Item.Image}" />
+        <Label Text="Trash type:" FontSize="Medium"/>
+        <Label Text="{Binding Item.WasteType}" d:Text="WasteType" FontSize="Medium" FontAttributes="Bold"/>
+        <Image Source="{Binding Item.WasteImage}" />
+    </StackLayout>
+    
+</ContentPage>
