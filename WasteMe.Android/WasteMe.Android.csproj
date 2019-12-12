@@ -138,7 +138,7 @@
     <AndroidResource Include="Resources\drawable\PlasticGlassDisposal.gif" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\WasteMeicon.png" />
+    <AndroidResource Include="Resources\drawable\icon.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\WasteMe.png" />

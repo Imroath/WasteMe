@@ -4490,7 +4490,7 @@ namespace WasteMe.Droid
 			public const int WasteMe = 2131165309;
 			
 			// aapt resource value: 0x7F07007E
-			public const int WasteMeicon = 2131165310;
+			public const int wastemeicon = 2131165310;
 			
 			// aapt resource value: 0x7F07007F
 			public const int xamarin_logo = 2131165311;

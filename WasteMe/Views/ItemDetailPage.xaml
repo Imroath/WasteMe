@@ -7,18 +7,17 @@
              x:Class="WasteMe.Views.ItemDetailPage"
              Title="{Binding Title}">
 
-    <StackLayout Spacing="20" Padding="80">
-        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
-            <Label Text="{Binding Item.Name}" d:Text="Item name" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-            <Label VerticalTextAlignment="Center" Text="{Binding Item.Barcode}" d:Text="Barcode" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+    <StackLayout Spacing="5" Padding="10,40,0,20" Orientation="Vertical">
+        <StackLayout Padding="10,40,0,0" Orientation="Horizontal">
+            <StackLayout Orientation="Vertical" HorizontalOptions="Start">
+                <Label Text="{Binding Item.Name}" d:Text="Item name" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
+                <Label VerticalTextAlignment="Center" Text="{Binding Item.Barcode}" d:Text="Barcode" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
+            </StackLayout>
+            <Image Source="{Binding Item.Image}" HorizontalOptions="End" />
         </StackLayout>
-        <Image Source="{Binding Item.Image}" />
-        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-            <Label Text="Trash type:" FontSize="Medium"/>
-            <Label Text="{Binding Item.WasteType}" d:Text="WasteType" FontSize="Medium" FontAttributes="Bold"/>
+        <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="EndAndExpand">
+            <Label Text="{Binding Item.WasteType}" d:Text="WasteType" FontSize="Header" FontAttributes="Bold"/>
+            <Image Source="{Binding Item.WasteImage}" />
         </StackLayout>
-        
-        <Image Source="{Binding Item.WasteImage}" />
     </StackLayout>
-    
 </ContentPage>
