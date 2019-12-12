@@ -9,7 +9,7 @@ namespace WasteMe.ViewModels
     {
         public ScanViewModel()
         {
-            Title = "About";
+            Title = "Scan";
 
             ScanCommand = new Command(() => Scan());
         }

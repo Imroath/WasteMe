@@ -25,14 +25,15 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <ScrollView Grid.Row="1">
-            <StackLayout>
-                <Button Margin="0,10,0,0" Text="Scan"
-                        Command="{Binding ScanCommand}"
-                        BackgroundColor="{StaticResource Primary}"
-                        TextColor="White" />
-            </StackLayout>
-        </ScrollView>
+        <StackLayout Grid.Row="1" VerticalOptions="Center">
+            <Button Margin="40" Text="Scan"
+                    HeightRequest="250"
+                    WidthRequest="400"
+                    Command="{Binding ScanCommand}"
+                    FontSize="Large"
+                    BackgroundColor="{StaticResource Primary}"
+                    TextColor="White" />
+        </StackLayout>
     </Grid>
     
 </ContentPage>
