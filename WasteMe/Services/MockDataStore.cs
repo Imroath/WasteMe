@@ -93,7 +93,7 @@ namespace WasteMe.Services
                 },    
                 new Item { Id = Guid.NewGuid().ToString(),
                     Name = "Green tea",
-                    Barcode="5000204625271",
+                    Barcode="5904215133933",
                     Image="HerbataZielonaAuchan100g.jpg",
                     WasteType="paper",
                     WasteImage="Paper.png"
