@@ -16,8 +16,9 @@
             <Image Source="{Binding Item.Image}" HorizontalOptions="End" WidthRequest="200" />
         </StackLayout>
         <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="EndAndExpand">
-            <Label Text="{Binding Item.WasteType}" d:Text="WasteType" FontSize="Large" FontAttributes="Bold"/>
+            <Label Text="{Binding Item.WasteType}" d:Text="WasteType" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
             <Image Source="{Binding Item.WasteImage}" />
+            <Label Margin="10, 20, 10, 20" Text="{Binding MotivationalText}" HorizontalTextAlignment="Center"></Label>
         </StackLayout>
     </StackLayout>
 </ContentPage>
