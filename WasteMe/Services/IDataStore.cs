@@ -10,6 +10,7 @@ namespace WasteMe.Services
         Task<bool> UpdateItemAsync(T item);
         Task<bool> DeleteItemAsync(string id);
         Task<T> GetItemAsync(string id);
+        Task<T> GetItemAsyncBarcode(string barcode);
         Task<IEnumerable<T>> GetItemsAsync(bool forceRefresh = false);
     }
 }

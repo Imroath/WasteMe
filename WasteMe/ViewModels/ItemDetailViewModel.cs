@@ -12,5 +12,10 @@ namespace WasteMe.ViewModels
             Title = item?.Name;
             Item = item;
         }
+        public ItemDetailViewModel(String barcode)
+        {
+            Item = DataStore.GetItemAsyncBarcode(barcode).ConfigureAwait(false).GetAwaiter().GetResult();
+            Title = Item?.Name;
+        }
     }
 }

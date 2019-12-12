@@ -45,7 +45,12 @@ namespace WasteMe.Services
             return null;
         }
 
-        public async Task<bool> AddItemAsync(Item item)
+        public Task<Item> GetItemAsyncBarcode(string barcode)
+        {
+            throw new NotImplementedException();
+        }
+
+            public async Task<bool> AddItemAsync(Item item)
         {
             if (item == null || !IsConnected)
                 return false;
