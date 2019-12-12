@@ -24,6 +24,7 @@ namespace WasteMe
                 DependencyService.Register<MockDataStore>();
             else
                 DependencyService.Register<AzureDataStore>();
+            DependencyService.Register<MotivationalTextRepository>();
             MainPage = new AppShell();
         }
 

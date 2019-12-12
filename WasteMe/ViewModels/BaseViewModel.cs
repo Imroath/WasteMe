@@ -13,6 +13,7 @@ namespace WasteMe.ViewModels
     public class BaseViewModel : INotifyPropertyChanged
     {
         public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>();
+        public IMotivationalTextsRepository MotivationalTextsRepository => DependencyService.Get<IMotivationalTextsRepository>();
 
         bool isBusy = false;
         public bool IsBusy
