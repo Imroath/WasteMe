@@ -31,7 +31,7 @@
                     WidthRequest="400"
                     Command="{Binding ScanCommand}"
                     FontSize="Large"
-                    BackgroundColor="{StaticResource Primary}"
+                    CornerRadius="10"
                     TextColor="White" />
         </StackLayout>
     </Grid>
