@@ -194,5 +194,8 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\NamyslowPils500ml.png" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ArrowDown.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
