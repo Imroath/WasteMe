@@ -11,7 +11,7 @@ using WasteMe.ViewModels;
 
 namespace WasteMe.Droid
 {
-    [Activity(Label = "WasteMe", Icon = "@mipmap/icon", Theme = "@style/MainTheme", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "WasteMe", Icon = "@mipmap/icon", Theme = "@style/MainTheme", ScreenOrientation =ScreenOrientation.Portrait,  ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
