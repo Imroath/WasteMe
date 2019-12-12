@@ -26,13 +26,19 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <StackLayout Grid.Row="1" VerticalOptions="Center">
+            <Image Source="scanBarcode.png" 
+                   Margin="0,20,0,0"
+                   HeightRequest="200"
+                   WidthRequest="100"
+                   />
             <Button Margin="40" Text="Scan"
                     HeightRequest="250"
                     WidthRequest="400"
                     Command="{Binding ScanCommand}"
                     FontSize="Large"
                     CornerRadius="10"
-                    TextColor="White" />
+                    TextColor="White"
+                    />
         </StackLayout>
     </Grid>
     
