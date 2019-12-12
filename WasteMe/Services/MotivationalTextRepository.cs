@@ -31,6 +31,12 @@ namespace WasteMe.Services
                     "To produce each week's Sunday newspapers, 500,000 trees must be cut down.",
                     "If all our newspaper was recycled, we could save about 250,000,000 trees each year!",
                     "Approximately 1 billion trees worth of paper are thrown away every year in the U.S."
+                }},
+                { "glass", new[]
+                {
+                    "Glass is 100% recyclable and can be recycled endlessly without loss in quality or purity.",
+                    "Glass is made from readily-available domestic materials, such as sand, soda ash, limestone and “cullet,” the industry term for furnace-ready recycled glass.",
+                    "Recycled glass can be substituted for up to 95% of raw materials."
                 }}
             };
     }
