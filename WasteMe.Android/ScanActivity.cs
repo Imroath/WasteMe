@@ -164,7 +164,7 @@ namespace WasteMe.Droid
                 session.StopScanning ();
 
                 // If you want to edit something in the view hierarchy make sure to run it on the UI thread.
-                RunOnUiThread (() => {
+                /*RunOnUiThread (() => {
                     AlertDialog alert = new AlertDialog.Builder (this)
                         .SetTitle (code.SymbologyName + " Barcode Detected")
                         .SetMessage (code.Data)
@@ -175,7 +175,12 @@ namespace WasteMe.Droid
                         .Create ();
 
                     alert.Show ();
-                });
+                });*/
+
+                Intent i = new Intent(this, typeof(MainActivity));
+                i.AddFlags(ActivityFlags.ReorderToFront);
+                i.PutExtra("barcode", code.Data);
+                this.StartActivity(i);
             }
         }
 

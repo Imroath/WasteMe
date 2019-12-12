@@ -6,6 +6,8 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Android.Content;
+using WasteMe.Views;
 
 namespace WasteMe.Droid
 {
@@ -29,6 +31,26 @@ namespace WasteMe.Droid
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+        }
+
+        protected override void OnNewIntent(Intent intent)
+        {
+            base.OnNewIntent(intent);
+            Intent = intent;
+        }
+
+        protected override void OnPostResume()
+        {
+            base.OnPostResume();
+            if (Intent.Extras != null)
+            {
+                string barcode = Intent.Extras.GetString("barcode");
+                Intent.RemoveExtra("fileName");
+                if (!string.IsNullOrEmpty(barcode))
+                {
+                    App.Current.MainPage.Navigation.PushAsync(new ItemDetailPage());
+                }
+            }
         }
     }
 }
