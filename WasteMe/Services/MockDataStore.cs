@@ -14,28 +14,85 @@ namespace WasteMe.Services
         {
             items = new List<Item>()
             {
-                new Item { Id = Guid.NewGuid().ToString(), 
-                    Name = "Permanent Market", 
-                    Barcode="4004675006400",
-                    Image="permanentmarker.jpg",
-                    WasteType="plastic",
-                    WasteImage="plastic.png"
-                },
                 new Item { Id = Guid.NewGuid().ToString(),
+                    Name = "Snickers",
+                    Barcode="5900951027307",
+                    Image="2Snickers75g.jpg",
+                    WasteType="metal_plastic",
+                    WasteImage="Metal_plastic.png"
+                },
+
+                                new Item { Id = Guid.NewGuid().ToString(),
+                    Name = "Cane sugar",
+                    Barcode="5904215135395",
+                    Image="CukierTrzcinowyDemerara400g.jpg",
+                    WasteType="paper",
+                    WasteImage="Paper.png"
+                },
+                                new Item { Id = Guid.NewGuid().ToString(),
+                    Name = "Hirse",
+                    Barcode="4038375025287",
+                    Image="NatumiHirseNatural1000ml.jpg",
+                    WasteType="metal_plastic",
+                    WasteImage="Metal_plastic.png"
+                },
+                                new Item { Id = Guid.NewGuid().ToString(),
+                    Name = "Chewing gum",
+                    Barcode="4009900484695",
+                    Image="OrbitSpearmintx42.png",
+                    WasteType="metal_plastic",
+                    WasteImage="Metal_plastic.png"
+                },
+                                new Item { Id = Guid.NewGuid().ToString(),
                     Name = "Coca-Cola",
                     Barcode="5449000000996",
-                    Image="cola.jpg",
-                    WasteType="plastic",
-                    WasteImage="plastic.png"
+                    Image="CocaCola330ml.jpg",
+                    WasteType="metal_plastic",
+                    WasteImage="Metal_plastic.png"
                 },
-                new Item { Id = Guid.NewGuid().ToString(),
-                    Name = "Post-It",
+                                new Item { Id = Guid.NewGuid().ToString(),
+                    Name = "Tea",
+                    Barcode="3585804000090",
+                    Image="KusmiTeaPrinceVladimir125g.jpg",
+                    WasteType="metal_plastic",
+                    WasteImage="Metal_plastic.png"
+                },
+                                new Item { Id = Guid.NewGuid().ToString(),
+                    Name = "Post-it",
                     Barcode="4046719100675",
-                    Image="postit.jpg",
-                    WasteType="plastic",
-                    WasteImage="paper.png"
-                }
-            };
+                    Image="PostIt100RecycledPack.jpg",
+                    WasteType="paper",
+                    WasteImage="Paper.png"
+                },
+
+                                                new Item { Id = Guid.NewGuid().ToString(),
+                    Name = "Delicje",
+                    Barcode="7622300436438",
+                    Image="2Snickers75g.jpg",
+                    WasteType="metal_plastic",
+                    WasteImage="Metal_plastic.png"
+                },
+                                                new Item { Id = Guid.NewGuid().ToString(),
+                    Name = "Rekawice",
+                    Barcode="5903936010769",
+                    Image="AnnaZaradnaRekawiceGumowe.png",
+                    WasteType="metal_plastic",
+                    WasteImage="Metal_plastic.png"
+                },                
+new Item { Id = Guid.NewGuid().ToString(),
+                    Name = "Glade",
+                    Barcode="5000204625271",
+                    Image="GladeSandalwood300ml.jpg",
+                    WasteType="metal_plastic",
+                    WasteImage="Metal_plastic.png"
+                },    
+                new Item { Id = Guid.NewGuid().ToString(),
+                    Name = "Frosch",
+                    Barcode="4009175148117",
+                    Image="FroschCytrynowy500ml.png",
+                    WasteType="metal_plastic",
+                    WasteImage="Metal_plastic.png"
+                }                             };
         }
 
         public async Task<bool> AddItemAsync(Item item)
