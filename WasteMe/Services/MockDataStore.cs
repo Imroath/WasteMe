@@ -19,21 +19,21 @@ namespace WasteMe.Services
                     Barcode="4004675006400",
                     Image="permanentmarker.jpg",
                     WasteType="plastic",
-                    WasteImage="plastic.jpg"
+                    WasteImage="plastic.png"
                 },
                 new Item { Id = Guid.NewGuid().ToString(),
                     Name = "Coca-Cola",
                     Barcode="5449000000996",
                     Image="cola.jpg",
                     WasteType="plastic",
-                    WasteImage="plastic.jpg"
+                    WasteImage="plastic.png"
                 },
                 new Item { Id = Guid.NewGuid().ToString(),
                     Name = "Post-It",
                     Barcode="4046719100675",
                     Image="postit.jpg",
                     WasteType="plastic",
-                    WasteImage="paper.jpg"
+                    WasteImage="paper.png"
                 }
             };
         }
@@ -65,6 +65,10 @@ namespace WasteMe.Services
         public async Task<Item> GetItemAsync(string id)
         {
             return await Task.FromResult(items.FirstOrDefault(s => s.Id == id));
+        }
+        public async Task<Item> GetItemAsyncBarcode(string barcode)
+        {
+            return await Task.FromResult(items.FirstOrDefault(s => s.Barcode == barcode));
         }
 
         public async Task<IEnumerable<Item>> GetItemsAsync(bool forceRefresh = false)
