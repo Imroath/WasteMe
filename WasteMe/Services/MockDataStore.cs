@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -66,7 +66,7 @@ namespace WasteMe.Services
                 new Item { Id = Guid.NewGuid().ToString(),
                     Name = "Delicje",
                     Barcode="7622300436438",
-                    Image="2Snickers75g.jpg",
+                    Image="DelicjeJagodowe147g.png",
                     WasteType="metal plastic",
                     WasteImage="Metal_plastic.png"
                 },
@@ -84,6 +84,20 @@ namespace WasteMe.Services
                     WasteType="metal plastic",
                     WasteImage="Metal_plastic.png"
                 },
+				new Item { Id = Guid.NewGuid().ToString(),
+                    Name = "Beer",
+                    Barcode="5903870005241",
+                    Image="NamyslowPils500ml.png",
+                    WasteType="glass",
+                    WasteImage="Glass.png"
+                },    
+                new Item { Id = Guid.NewGuid().ToString(),
+                    Name = "Green tea",
+                    Barcode="5000204625271",
+                    Image="HerbataZielonaAuchan100g.jpg",
+                    WasteType="paper",
+                    WasteImage="Paper.png"
+                },    
                 new Item { Id = Guid.NewGuid().ToString(),
                     Name = "Frosch",
                     Barcode="4009175148117",
