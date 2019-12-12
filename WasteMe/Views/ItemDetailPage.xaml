@@ -13,10 +13,10 @@
                 <Label Text="{Binding Item.Name}" d:Text="Item name" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
                 <Label VerticalTextAlignment="Center" Text="{Binding Item.Barcode}" d:Text="Barcode" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
             </StackLayout>
-            <Image Source="{Binding Item.Image}" HorizontalOptions="End" />
+            <Image Source="{Binding Item.Image}" HorizontalOptions="End" WidthRequest="200" />
         </StackLayout>
         <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="EndAndExpand">
-            <Label Text="{Binding Item.WasteType}" d:Text="WasteType" FontSize="Header" FontAttributes="Bold"/>
+            <Label Text="{Binding Item.WasteType}" d:Text="WasteType" FontSize="Large" FontAttributes="Bold"/>
             <Image Source="{Binding Item.WasteImage}" />
         </StackLayout>
     </StackLayout>
